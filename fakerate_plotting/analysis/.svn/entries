@@ -1,93 +1,0 @@
-10
-
-dir
-238456
-svn+ssh://tidreyer@svn.cern.ch/reps/atlasphys-hsg4/Physics/Higgs/HSG4/software/spinCP/Decays/plottingCode/trunk/analysis
-svn+ssh://tidreyer@svn.cern.ch/reps/atlasphys-hsg4
-
-
-
-2017-05-29T12:19:16.199244Z
-238455
-edrechsl
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-883ba7d9-fdd0-4202-9341-49aa55999ad8
-
-tools
-dir
-
-leplep
-dir
-
-Zee
-dir
-
-
-
-add
-
-Wprime
-dir
-
-__init__.py
-file
-235891
-
-
-
-2015-11-18T10:13:33.000000Z
-d41d8cd98f00b204e9800998ecf8427e
-2015-11-10T15:14:27.854281Z
-235451
-cgrefe
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-0
-
-hadhad
-dir
-
-hcp
-dir
-
-lephad
-dir
-
-Zmumu
-dir
-
-lephad_bsm
-dir
-
