@@ -1,0 +1,31 @@
+Index: Dataset.py
+===================================================================
+--- Dataset.py	(revision 236897)
++++ Dataset.py	(working copy)
+@@ -94,7 +94,7 @@
+ class HistogramBasedSumOfWeightsCalculator( SumOfWeightsCalculator ):
+     ## Helper class to wrap sum of weight calculation
+     
+-    def __init__( self, histogramName='h_metadata', binIndex=8 ):
++    def __init__( self, histogramName='h_metadata', binIndex=7 ):
+         ## Default constructor
+         SumOfWeightsCalculator.__init__( self )
+         self.histogramName = histogramName
+@@ -651,7 +651,7 @@
+ 
+         storeSystematicsName = systematicVariation.name if systematicVariation.isShapeSystematics else self.nominalSystematics.name
+         if self.histogramStore:
+-            hist = self.histogramStore.getHistogram( self.name, storeSystematicsName, xVar, cut )
++            hist = self.histogramStore.getHistogram( xVar.title, self.name, storeSystematicsName, xVar, cut )
+             if hist:
+               self.logger.debug( 'getHistogram(): retrieved Histogram from store %s, yield=%g' % (self.name, hist.Integral()) )
+         
+@@ -667,7 +667,7 @@
+                 hist.Scale( 1. / self.sumOfWeights )
+                 self.logger.debug( 'getHistogram(): dividing by sum of weights %g, yield=%g' % (self.sumOfWeights, hist.Integral()) )
+             if self.histogramStore:
+-                self.histogramStore.putHistogram( self.name, storeSystematicsName, xVar, cut, hist )
++                self.histogramStore.putHistogram( xVar.title, self.name, storeSystematicsName, xVar, cut, hist )
+         
+         # apply scale factors
+         if hist:

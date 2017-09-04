@@ -1,0 +1,12 @@
+rm -f plots/*pdf
+rm -f plots/*eps
+rm -f plots/*png
+rm -f plots/*C
+rm -f plots/*root
+rm -f plots/*txt
+rm -f plots/norm/*pdf
+rm -f plots/norm/*eps
+rm -f plots/norm/*png
+rm -f plots/norm/*C
+rm -f plots/norm/*root
+rm -f plots/norm/*txt

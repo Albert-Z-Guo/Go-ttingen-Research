@@ -1,0 +1,11 @@
+place this directory as plottingCode/trunk/analysis/Zee into the plotting Framework from:
+svn+ssh://tidreyer@svn.cern.ch/reps/atlasphys-hsg4/Physics/Higgs/HSG4/software/spinCP/Decays/plottingCode
+
+source env.sh in this directory (no need to source the env.sh in the trunk directory)
+
+Stay in this directory for relative paths to work!
+
+run with:
+python analysis/makeplots.py
+or:
+python analysis/simpleTests_01.py

@@ -1,0 +1,8 @@
+#!/bin/bash
+SCRIPT_PATH=`pwd`
+SCRIPT_NAME=$1
+JOB_NAME=${SCRIPT_NAME##*/}
+
+QSUB_JOBOPTIONS="-N $JOB_NAME -o $SCRIPT_PATH/qsub_logs"
+
+qsub $QSUB_JOBOPTIONS qsub_python.sh $SCRIPT_PATH $SCRIPT_NAME

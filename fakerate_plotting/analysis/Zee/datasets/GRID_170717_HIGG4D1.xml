@@ -1,0 +1,71 @@
+<plotting>
+
+    <HistogramStore> histogramStore/GRID_170717_HIGG4D1.root </HistogramStore>
+
+    <!-- data -->
+    <PhysicsProcess name="data" title="Data" isData="True">
+	<Style color="1" markerSize="1.2"/>
+	<Dataset name="data15" isData="True">
+	    <File> /nfs/dust/atlas/user/tidreyer/ntuple/GRID_170717_HIGG4D1/user*data15*_hist/user.tidreyer*hist-output.root </File>
+	</Dataset>
+	<Dataset name="data16" isData="True">
+	    <File> /nfs/dust/atlas/user/tidreyer/ntuple/GRID_170717_HIGG4D1/user*data16*_hist/user.tidreyer*hist-output.root </File>
+	</Dataset>
+    </PhysicsProcess>
+
+    <!-- Zmumu -->
+    <PhysicsProcess name="Zmumu" title="Z#rightarrow#mu#mu">
+	<Style color="5"/>
+	<Dataset name="Zmumu" title="Zmumu" treeName="NOMINAL" isData="False" isSignal="False" crossSection="1950.6321" kFactor="0.936201092">
+	    <File> /nfs/dust/atlas/user/tidreyer/ntuple/GRID_170717_HIGG4D1/user*361107*_hist/user.tidreyer*.hist-output.root </File>
+	</Dataset>
+    </PhysicsProcess>
+
+    <!-- Ztautau -->
+    <PhysicsProcess name="Ztautau" title="Z#rightarrow#tau#tau">
+	<Style color="4"/>
+	<Dataset name="Ztautau" title="Ztautau" treeName="NOMINAL" isData="False" isSignal="False" crossSection="1950.6321" kFactor="0.936201092">
+	    <File> /nfs/dust/atlas/user/tidreyer/ntuple/GRID_170717_HIGG4D1/user*361108*_hist/user.tidreyer*.hist-output.root </File>
+	</Dataset>
+    </PhysicsProcess>
+      
+    <!-- W + Jets -->
+    <PhysicsProcess name="wjets" title="W+Jets">
+	<Style color="6"/>
+	<Dataset name="Wplusenu" title="Wplusenu" treeName="NOMINAL" isData="False" isSignal="False" crossSection="11500.9154" kFactor="0.936201092">
+	    <File> /nfs/dust/atlas/user/tidreyer/ntuple/GRID_170717_HIGG4D1/user*361100*_hist/user.tidreyer*.hist-output.root </File>
+	</Dataset>
+	<Dataset name="Wplusmunu" title="Wplusmunu" treeName="NOMINAL" isData="False" isSignal="False" crossSection="11500.9154" kFactor="0.936201092">
+	    <File> /nfs/dust/atlas/user/tidreyer/ntuple/GRID_170717_HIGG4D1/user*361101*_hist/user.tidreyer*.hist-output.root </File>
+	</Dataset>
+	<Dataset name="Wplustaunu" title="Wplustaunu" treeName="NOMINAL" isData="False" isSignal="False" crossSection="11500.9154" kFactor="0.936201092">
+	    <File> /nfs/dust/atlas/user/tidreyer/ntuple/GRID_170717_HIGG4D1/user*361102*_hist/user.tidreyer*.hist-output.root </File>
+	</Dataset>
+	<Dataset name="Wminusenu" title="Wminusenu" treeName="NOMINAL" isData="False" isSignal="False" crossSection="8579.0011" kFactor="0.936201092">
+	    <File> /nfs/dust/atlas/user/tidreyer/ntuple/GRID_170717_HIGG4D1/user*361103*_hist/user.tidreyer*.hist-output.root </File>
+	</Dataset>
+	<Dataset name="Wminusmunu" title="Wminusmunu" treeName="NOMINAL" isData="False" isSignal="False" crossSection="8579.0011" kFactor="0.936201092">
+	    <File> /nfs/dust/atlas/user/tidreyer/ntuple/GRID_170717_HIGG4D1/user*361104*_hist/user.tidreyer*.hist-output.root </File>
+	</Dataset>
+	<Dataset name="Wminustaunu" title="Wminustaunu" treeName="NOMINAL" isData="False" isSignal="False" crossSection="8579.0011" kFactor="0.936201092">
+	    <File> /nfs/dust/atlas/user/tidreyer/ntuple/GRID_170717_HIGG4D1/user*361105*_hist/user.tidreyer*.hist-output.root </File>
+	</Dataset>
+    </PhysicsProcess>
+
+    <!-- ttbar -->
+    <PhysicsProcess name="ttbar" title="t#bar{t}">
+	<Style color="3"/>
+	<Dataset name="ttbar" title="ttbar" treeName="NOMINAL" isData="False" isSignal="False" crossSection="831.76" kFactor="0.936201092">
+	    <File> /nfs/dust/atlas/user/tidreyer/ntuple/GRID_170717_HIGG4D1/user*410000*_hist/user.tidreyer*.hist-output.root </File>
+	</Dataset>
+    </PhysicsProcess>
+
+    <!-- Zee -->
+    <PhysicsProcess name="Zee" title="Z#rightarrow ee">
+	<Style color="2"/>
+	<Dataset name="Zee" title="Zee" treeName="NOMINAL" isData="False" isSignal="True" crossSection="1950.6321" kFactor="0.936201092">
+	    <File> /nfs/dust/atlas/user/tidreyer/ntuple/GRID_170717_HIGG4D1/user*361106*_hist/user.tidreyer*.hist-output.root </File>
+	</Dataset>
+    </PhysicsProcess>
+
+</plotting>

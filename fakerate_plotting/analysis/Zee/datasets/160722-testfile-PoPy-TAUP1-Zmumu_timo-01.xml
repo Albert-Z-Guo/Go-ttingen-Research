@@ -1,0 +1,11 @@
+<plotting>
+
+    <!-- Zee -->
+    <PhysicsProcess name="Zee" title="Z#rightarrow ee">
+	<Style color="2"/>
+	<Dataset name="Zee" title="Zee" treeName="NOMINAL" isData="False" isSignal="True" crossSection="1950.6321" kFactor="1">
+	    <File> /nfs/dust/atlas/user/tidreyer/ntuple/160722-testfile-PoPy-TAUP1-Zmumu_timo-01/hist-mc15_13TeV.root </File>
+	</Dataset>
+    </PhysicsProcess>
+
+</plotting>

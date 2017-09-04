@@ -1,0 +1,36 @@
+Index: TreePlot.py
+===================================================================
+--- TreePlot.py	(revision 237345)
++++ TreePlot.py	(working copy)
+@@ -57,6 +57,7 @@
+     #  @ param drawOption       draw option used
+     #  @ param style            Style object which is used
+     #  @ return the generated histogram
++    print "creating {} from tree {} ({}) with {} entries for variable {}".format( title, tree.GetName(), tree, tree.GetEntries(), xVar.name)
+     myCut = cut
+     if not myCut:
+         myCut = Cut()
+Index: HistogramStore.py
+===================================================================
+--- HistogramStore.py	(revision 237345)
++++ HistogramStore.py	(working copy)
+@@ -103,4 +103,4 @@
+         histogram.SetTitle( histogramName )
+         histogram.Write( histogramName, TObject.kOverwrite )
+ 
+-        
+\ No newline at end of file
++        
+Index: Dataset.py
+===================================================================
+--- Dataset.py	(revision 237345)
++++ Dataset.py	(working copy)
+@@ -94,7 +94,7 @@
+ class HistogramBasedSumOfWeightsCalculator( SumOfWeightsCalculator ):
+     ## Helper class to wrap sum of weight calculation
+     
+-    def __init__( self, histogramName='h_metadata', binIndex=8 ):
++    def __init__( self, histogramName='h_metadata', binIndex=7 ):
+         ## Default constructor
+         SumOfWeightsCalculator.__init__( self )
+         self.histogramName = histogramName
