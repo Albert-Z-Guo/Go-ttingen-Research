@@ -1,4 +1,4 @@
-# Goettingen-Research
+# University of Göttingen High Performance Scientific Computing Research
 A summary of this research project can be found at Research_Summary.pdf.
 
 ▪ Refactored and implemented a set of analysis scripts in Python and Bash under ROOT framework for 2016’s data of the Large Hadron Collider (LHC), including event selection; data and reweighted Monte Carlo simulation comparison; particle truth matching; scale factor computing; particle template fitting; quark/gluon fake rates extraction; and systematic and statistical errors computation on fake rates. <br />
